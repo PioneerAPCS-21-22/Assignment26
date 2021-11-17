@@ -37,7 +37,7 @@ Read the description of indexOf(String str, int fromIndex). Add lines to StringE
 
 ### Part 3
 
-Single keywords are interesting, but better chatbots look for groups of words. Statements like “I like cats,” “I like math class,” and “I like Spain” all have the form “I like something.” The response could be “What do you like about something?” In this part we will respond to groupings of words.
+Single keywords are interesting, but better chatbots look for groups of words. Statements like “I want a cat,” “I want fried chicken,” and “I want donuts” all have the form “I want <something>.” The response could be “Would you be happy if you had <something>?” In this part we will respond to groupings of words.
 
 Download `Chatbot2.java`, which has the directions for part 2. You will also notice that `getResponse()` has been altered and there is a new method called `findKeyword()`. The `findKeyword()` method is a little bit more sophisticated and solves some of the issues in the code from part 1.
 
