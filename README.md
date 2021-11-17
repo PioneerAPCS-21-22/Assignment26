@@ -24,6 +24,25 @@ For `Chatbot.java`:
 
 ### Part 2
 
+One of the major benefits of using Java as a programming language is that so many library classes have already been created for it.
+
+Open the program `StringExplorer`. It currently has code to illustrate the use of the `trim`, `indexOf`, and `toLowerCase` methods.
+
+Open the API for `String`. Scroll down to the **Method Summary** section and find the `indexOf(String str)` method. Follow the link and read the description of the `indexOf` method. What value is returned by `indexOf` if the substring does not occur in the string?
+Add the following lines to `StringExplorer` to see for yourself that `indexOf` behaves as specified:
+int notFoundPsn = sample.indexOf("slow");
+6
+System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
+Read the description of indexOf(String str, int fromIndex). Add lines to StringExplorer that illustrate how this version of indexOf differs from the one with one parameter.
+
+### Part 3
+
+Single keywords are interesting, but better chatbots look for groups of words. Statements like “I like cats,” “I like math class,” and “I like Spain” all have the form “I like something.” The response could be “What do you like about something?” In this part we will respond to groupings of words.
+
+Download `Chatbot2.java`, which has the directions for part 2. You will also notice that `getResponse()` has been altered and there is a new method called `findKeyword()`. The `findKeyword()` method is a little bit more sophisticated and solves some of the issues in the code from part 1.
+
+* Add an `else if` to `getResponse()` to check for "I want" statements.
+* Fill in the `transformIWantStatement()` method to respond to "I want" statements.
 
 ## Grading
 
